@@ -8,7 +8,7 @@ function StoreHeader(props) {
         <header className="store-header">
             {/* store-brand contains store logo and name */}
             <div className="store-brand">
-                <img className="store-logo" src="src/images/barbie-logo.png" alt="Lazado logo" />
+                <img className="store-logo" src="images/barbie-logo.png" alt="Lazado logo" />
                 <h1 className="store-name">Lazado</h1>
             </div>
 

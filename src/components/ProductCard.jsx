@@ -21,7 +21,7 @@ function ProductCard(props) {
 
             {/* triggers when clicked */}
             <button className="add-to-cart" onClick={addToCart}>
-                <img className="cart-icon" src="src/images/cart-icon.png" alt="" />
+                <img className="cart-icon" src="images/cart-icon.png" alt="" />
                 Add to cart
             </button>
         </div>

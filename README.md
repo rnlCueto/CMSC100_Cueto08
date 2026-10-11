@@ -43,11 +43,12 @@ CMSC100_Cueto08/
 ├── vite.config.js
 ├── .gitignore
 ├── README.md
+├── public/
+    ├── images/
 ├── src/
    ├── main.jsx
    ├── App.jsx
    ├── App.css
-   ├── images/
    └── components/
         ├── StoreHeader.jsx
         ├── NavButton.jsx

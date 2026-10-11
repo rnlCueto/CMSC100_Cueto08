@@ -8,23 +8,23 @@ import ProductList from './components/ProductList'
 // the navigation buttons at the top right of the page
 // array of objects w/ each key serving as attribute later on
 const navigationButtons = [
-  { name: 'Appliances', url: '#', icon: 'src/images/appliance-icon.png', id: 1 },
-  { name: 'Groceries',  url: '#', icon: 'src/images/grocery-icon.png', id: 2 },
-  { name: 'Gadgets',    url: '#', icon: 'src/images/gadgets-icon.png', id: 3 },
-  { name: 'Clothing',   url: '#', icon: 'src/images/clothes-icon.png', id: 4 },
+  { name: 'Appliances', url: '#', icon: 'images/appliance-icon.png', id: 1 },
+  { name: 'Groceries',  url: '#', icon: 'images/grocery-icon.png', id: 2 },
+  { name: 'Gadgets',    url: '#', icon: 'images/gadgets-icon.png', id: 3 },
+  { name: 'Clothing',   url: '#', icon: 'images/clothes-icon.png', id: 4 },
 ]
 
 // the products shown on the page
 // array of objects w/ each key serving as attribute later on
 const products = [
-  { name: 'Asahy Power Juicer',        picture: 'src/images/barbie-juicer.jpg', id: 1 },
-  { name: 'Samsong Washing Machine',   picture: 'src/images/barbie-washingMachine.jpg', id: 2 },
-  { name: 'Hanabesh Electric Promo',   picture: 'src/images/barbie-electricSet.jpg', id: 3 },
-  { name: 'Tosheba Rice Cooker',       picture: 'src/images/barbie-riceCooker.jpg', id: 4 },
-  { name: 'Philipz Yogurt Maker',      picture: 'src/images/barbie-yogurtMaker.jpg', id: 5 },
-  { name: 'Sharpp Shoe-Vacuum',        picture: 'src/images/barbie-shoeVacuum.jpg', id: 6 },
-  { name: 'Hitachu Refrigerator',      picture: 'src/images/barbie-fridge.jpg', id: 7 },
-  { name: 'Panasonyk Electric Kettle', picture: 'src/images/barbie-eKettle.jpg', id: 8 },
+  { name: 'Asahy Power Juicer',        picture: 'images/barbie-juicer.jpg', id: 1 },
+  { name: 'Samsong Washing Machine',   picture: 'images/barbie-washingmachine.jpg', id: 2 },
+  { name: 'Hanabesh Electric Promo',   picture: 'images/barbie-electricset.jpg', id: 3 },
+  { name: 'Tosheba Rice Cooker',       picture: 'images/barbie-ricecooker.jpg', id: 4 },
+  { name: 'Philipz Yogurt Maker',      picture: 'images/barbie-yogurtmaker.jpg', id: 5 },
+  { name: 'Sharpp Shoe-Vacuum',        picture: 'images/barbie-shoevacuum.jpg', id: 6 },
+  { name: 'Hitachu Refrigerator',      picture: 'images/barbie-fridge.jpg', id: 7 },
+  { name: 'Panasonyk Electric Kettle', picture: 'images/barbie-ekettle.jpg', id: 8 },
 ]
 
 // replace the contents of the App class’s return statement in a div
