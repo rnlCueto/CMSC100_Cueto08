@@ -1,0 +1,82 @@
+/* Page */
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fbf4e2;          /* cream */
+    color: #3f2a00;               /* dark brown text */
+}
+
+/* Header: brand on the left, navigation on the right */
+.store-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+    background: #eba81c;          /* dandelion gold */
+}
+.store-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.store-logo { width: 40px; height: 40px; }
+.store-name { margin: 0; font-size: 28px; }
+
+/* Navigation buttons */
+.navigation-panel {
+    display: flex;
+    gap: 8px;
+}
+.nav-button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    color: #3f2a00;
+    text-decoration: none;
+}
+.nav-icon { width: 20px; height: 20px; }
+
+/* Body: product cards side by side */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 24px 40px;
+}
+
+.product-card {
+    width: 180px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #fff;
+    border: 1px solid #f0dda5;
+    border-radius: 8px;
+}
+.product-picture {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.product-name { margin: 0; font-size: 14px; }
+
+.add-to-cart {
+    margin-top: auto;             /* keeps the button at the bottom of the card */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    background: #eba81c;
+    color: #3f2a00;
+    font-weight: bold;
+    cursor: pointer;
+}
+.cart-icon { width: 18px; height: 18px; }
+
