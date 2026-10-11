@@ -1,51 +1,82 @@
-/* Page */
-* { box-sizing: border-box; }
+/* @author: Raven Nathalie L. Cueto
+   @date created: October 12, 2026
+   @section: CMSC100 - D1L
+*/
+
+/* page */
+* { box-sizing: border-box; } /* clean responsive design */
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #fbf4e2;          /* cream */
-    color: #3f2a00;               /* dark brown text */
+    font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+    background: #e186a9;          /* dusty rose */
+    color: #702381;               /* purple */
 }
 
-/* Header: brand on the left, navigation on the right */
+
+/* header (logo and store name on the left, navigation on the right) */
 .store-header {
     display: flex;
+    flex-wrap: wrap;              /* if the screen is too narrow, the navigation drops to the next line */
     justify-content: space-between;
     align-items: center;
+    gap: 12px;
     padding: 12px 40px;
-    background: #eba81c;          /* dandelion gold */
+    background: #b9175f;          /* raspberry pink */
 }
+
+/* contains store-logo and store-name */
 .store-brand {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.store-logo { width: 40px; height: 40px; }
-.store-name { margin: 0; font-size: 28px; }
+/* barbie: life in a dreamhouse references*/
+.store-logo { 
+    width: 40px; 
+    height: 40px; 
+}
+.store-name {
+    margin: 0;
+    padding: 4px 16px;
+    font-size: 26px;
+    background: #fef01b;          /* yellow name plate */
+    color: #702381;
+    border-radius: 12px;
+}
 
-/* Navigation buttons */
+/* navigation buttons */
+/* contains all the nav buttons + icons */
 .navigation-panel {
     display: flex;
+    flex-wrap: wrap;              /* buttons move to the next line instead of squeezing */
     gap: 8px;
 }
+/* consistent icons and font choices with the barbie reference */
 .nav-button {
     display: flex;
     align-items: center;
     gap: 6px;
     padding: 8px 14px;
-    color: #3f2a00;
+    color: #fff;
+    font-weight: bold;
     text-decoration: none;
+    white-space: nowrap;          /* keeps "Living Room" on one line */
 }
-.nav-icon { width: 20px; height: 20px; }
+.nav-icon { 
+    width: 20px; 
+    height: 20px; 
+}
 
-/* Body: product cards side by side */
+
+/* contains the product cards side by side */
 .product-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 16px;
     padding: 24px 40px;
 }
-
+/* contains the pic, name, add-to-cart button of each product */
 .product-card {
     width: 180px;
     padding: 12px;
@@ -53,17 +84,22 @@ body {
     flex-direction: column;
     gap: 10px;
     background: #fff;
-    border: 1px solid #f0dda5;
-    border-radius: 8px;
+    border: 3px solid #da3884;    /* logo pink */
+    border-radius: 12px;
 }
 .product-picture {
     width: 100%;
     height: 150px;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 8px;
 }
-.product-name { margin: 0; font-size: 14px; }
-
+.product-name {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+/* style add-to-cart button */
 .add-to-cart {
     margin-top: auto;             /* keeps the button at the bottom of the card */
     display: flex;
@@ -72,11 +108,25 @@ body {
     gap: 6px;
     padding: 8px;
     border: none;
-    border-radius: 6px;
-    background: #eba81c;
-    color: #3f2a00;
+    border-radius: 8px;
+    background: #fef01b;          /* yellow */
+    color: #702381;
     font-weight: bold;
     cursor: pointer;
 }
-.cart-icon { width: 18px; height: 18px; }
+.cart-icon { 
+    width: 18px; 
+    height: 18px; 
+}
 
+
+/* hovers to add a sense of interactivity*/
+.add-to-cart:hover {
+    transform: scale(1.05); /* Increases size by 5% */
+    background: #ffa7c8;
+}
+
+.nav-button:hover, .store-logo:hover, .product-card:hover {
+    transform: scale(1.05); /* Increases size by 5% */
+    color:#5c002a;
+}
